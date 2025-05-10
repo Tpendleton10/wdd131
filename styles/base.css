@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Header styles */
+header {
+    background-color: #003049;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+header h1 span {
+    color: #fcbf49; /* highlight for your name */
+}
+
+/* Navigation styles */
+nav {
+    background-color: #262626;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0.5rem 0;
+}
+
+nav a {
+    color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* Card styles */
+.card {
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    padding: 1.5rem;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+    background-color: #003049;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Image styles */
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card figure {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card figure figcaption {
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Footer styles */
+footer {
+    background-color: #003049;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem;
+}
+
+footer .highlight {
+    color: #fcbf49;
+}
+
+#lastModified {
+    color: #a2f2b2;
+}
