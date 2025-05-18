@@ -1,0 +1,89 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f4;
+}
+
+
+header {
+  background-color: #6200c2;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+
+#menuButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+
+
+nav ul.show {
+  display: flex;
+}
+
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+}
+
+
+.gallery img {
+  width: 90%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+
+footer {
+  background-color: #6200c2;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
