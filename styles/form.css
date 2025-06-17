@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1em;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+label, select, input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+}
+
+.rating label {
+  display: inline-block;
+  margin-right: 1em;
+}
+
+input[type="submit"] {
+  background: #007BFF;
+  color: white;
+  padding: 0.7em;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background: #0056b3;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #666;
+}

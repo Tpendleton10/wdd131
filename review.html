@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Form page">
+  <meta name="author" content="Ty Pendleton">
+  <title>Review Submitted</title>
+  <link rel="stylesheet" href="styles/form.css" />
+</head>
+<body>
+  <main>
+    <h1>Thank You!</h1>
+    <p>Your review has been submitted successfully.</p>
+    <p>Total reviews submitted: <span id="reviewCount"></span></p>
+    <a href="form.html">Submit another review</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Product Reviews Inc. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Increase review count in localStorage
+    let count = localStorage.getItem('reviewCount') || 0;
+    count++;
+    localStorage.setItem('reviewCount', count);
+    document.getElementById("reviewCount").textContent = count;
+  </script>
+</body>
+</html>
