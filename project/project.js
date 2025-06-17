@@ -1,4 +1,4 @@
-// Fire Safety Checklist
+// 1. Fire Safety Checklist
 const safetyTips = [
   "Test smoke alarms monthly",
   "Replace batteries annually",
@@ -7,11 +7,11 @@ const safetyTips = [
   "Know how to use a fire extinguisher"
 ];
 
-// Load saved state or default
 let completedTips = JSON.parse(localStorage.getItem("completedTips")) || [];
 
 function renderChecklist() {
   const list = document.getElementById("checklist");
+  if (!list) return; // Avoid errors on pages without checklist
   list.innerHTML = "";
 
   safetyTips.forEach((tip, index) => {
@@ -41,6 +41,7 @@ function handleChecklistClick(e) {
 
 function checkCompletion() {
   const status = document.getElementById("checklist-status");
+  if (!status) return;
   if (completedTips.length === safetyTips.length) {
     status.textContent = `🎉 Great job! You've completed all safety tips.`;
   } else {
@@ -48,8 +49,22 @@ function checkCompletion() {
   }
 }
 
+// 2. Optional: Contact form submission handler
 document.addEventListener("DOMContentLoaded", () => {
   renderChecklist();
-  document.getElementById("checklist").addEventListener("change", handleChecklistClick);
-  checkCompletion();
+
+  const checklistElement = document.getElementById("checklist");
+  if (checklistElement) {
+    checklistElement.addEventListener("change", handleChecklistClick);
+    checkCompletion();
+  }
+
+  const contactForm = document.getElementById("contact-form");
+  if (contactForm) {
+    contactForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      alert("Thank you for contacting Las Vegas Fire and Rescue!");
+      contactForm.reset();
+    });
+  }
 });
